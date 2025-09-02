@@ -1,6 +1,7 @@
 import { Veiculo } from "./Veiculo";
 import prompt from "prompt-sync";
 
+
 const teclado = prompt();
 
 console.log('Criação de veículo');
@@ -23,6 +24,9 @@ while(true){
         case 1:
             acelerar(carro);
             break;
+        case 2:
+            Frear(carro)
+
     
         default:
             break;
@@ -36,6 +40,12 @@ function acelerar(veiculo: Veiculo): void{
     veiculo.velocidade += veiculo.potencia*0.1;
     console.log(veiculo.velocidade);
 }}
+function Frear(veiculo:Veiculo): void{
+    if(veiculo.marchaAtual != 0){
+        
+    }
+
+}
 
 function criaVeiculo(): Veiculo{
     const veiculo: Veiculo = new Veiculo();
@@ -45,5 +55,6 @@ function criaVeiculo(): Veiculo{
     veiculo.numeroMarchas = +teclado('Número de marchas: ');
     return veiculo;
 }
+
 
 
