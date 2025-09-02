@@ -56,5 +56,9 @@ function criaVeiculo(): Veiculo{
     return veiculo;
 }
 
+<<<<<<< HEAD
 
 
+=======
+console.log("Veículo fabricado com Sucesso!")
+>>>>>>> 775569c837f98e779d8b79a5f7b3d3812a9e2098
