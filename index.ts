@@ -46,4 +46,4 @@ function criaVeiculo(): Veiculo{
     return veiculo;
 }
 
-
+console.log("Veículo fabricado com Sucesso!")
