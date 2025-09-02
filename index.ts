@@ -55,6 +55,17 @@ function frear(veiculo:Veiculo): void{
 
 }
 
+function imprimirDados(veiculo: Veiculo): void {
+    console.log("===== Dados do Veículo =====");
+    console.log(`Marca: ${veiculo.marca}`);
+    console.log(`Modelo: ${veiculo.modelo}`);
+    console.log(`Potência: ${veiculo.potencia} cv`);
+    console.log(`Número de marchas: ${veiculo.numeroMarchas}`);
+    console.log(`Marcha atual: ${veiculo.marchaAtual}`);
+    console.log(`Velocidade: ${veiculo.velocidade.toFixed(2)} km/h`);
+    console.log("============================");
+}
+
 function criaVeiculo(): Veiculo{
     const veiculo: Veiculo = new Veiculo();
     veiculo.marca = teclado('Marca: ');
